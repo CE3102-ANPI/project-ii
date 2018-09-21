@@ -4,6 +4,7 @@ module fsm_vga
 	input logic a,
 	output logic y
 );
+
 	typedef enum logic [1:0] {S0, S1, S2, S3} statetype;
 	statetype state, nextstate;
 	// state register
