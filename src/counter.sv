@@ -1,3 +1,12 @@
+/* 
+ *
+ * Synchronous counter.
+ *
+ * @file  counter.sv
+ * @autor Luis Arturo Mora Granados
+ * @date  20/09/2018
+ */
+
 module counter #(parameter N = 8)
 (
     input logic clk_i, rst_i,

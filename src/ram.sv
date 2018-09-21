@@ -1,12 +1,22 @@
-module ram #(parameter N = 6, M = 32)
+ /* 
+  *
+  * Dual Port - Random Access Memory.
+  *
+  * @file  ram.sv
+  * @autor Luis Arturo Mora Granados
+  * @date  20/09/2018
+  */
+
+module ram #(parameter ADDR_WIDTH = 6, 
+             parameter DATA_WIDTH = 32)
 (
-	input logic clk, we,
-	input logic [N-1:0] adr,
-	input logic [M-1:0] din,
-	output logic [M-1:0] dout
+	input logic clk_i, write_ena_i,
+	input logic [ADDR_WIDTH-1:0] w_addr_i, r_addr_i,
+	input logic [DATA_WIDTH-1:0] bus_data_i,
+	output logic [DATA_WIDTH-1:0] bus_data_o
 );
-	logic [M-1:0] mem [2**N*1:0];
-	always_ff @(posedge clk)
-		if(we) mem[adr] <= din;
-	assign dout = men[adr];
+	logic [DATA_WIDTH-1:0] mem [2**ADDR_WIDTH-1:0];
+	always_ff @(posedge clk_i)
+		if(write_ena_i) mem[w_addr_i] <= bus_data_i;
+	assign bus_data_o = mem[r_addr_i];
 endmodule

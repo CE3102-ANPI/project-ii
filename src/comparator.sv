@@ -1,3 +1,14 @@
+/* 
+ *
+ * Comparator with equal, not equal,
+ * less than, less or equal, greater than
+ * greater or equal.
+ *
+ * @file  comparator.sv
+ * @autor Luis Arturo Mora Granados
+ * @date  20/09/2018
+*/
+
 module comparator #(parameter N = 8) 
 (
    input  logic [N-1:0] a, b,
