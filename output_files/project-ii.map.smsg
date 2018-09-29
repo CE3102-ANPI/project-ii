@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at counterwe.sv(15): always construct contains both blocking and non-blocking assignments File: C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/counterwe.sv Line: 15

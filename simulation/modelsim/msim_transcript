@@ -1,0 +1,54 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do project-ii_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src {C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/putToken.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:51:05 on Sep 29,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src" C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/putToken.sv 
+# -- Compiling module putToken
+# 
+# Top level modules:
+# 	putToken
+# End time: 02:51:06 on Sep 29,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src {C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:51:06 on Sep 29,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src" C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken_tb.sv 
+# -- Compiling module genToken_tb
+# 
+# Top level modules:
+# 	genToken_tb
+# End time: 02:51:06 on Sep 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src {C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:51:06 on Sep 29,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src" C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken.sv 
+# -- Compiling module genToken
+# 
+# Top level modules:
+# 	genToken
+# End time: 02:51:06 on Sep 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src {C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/counterwe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:51:06 on Sep 29,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src" C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/counterwe.sv 
+# -- Compiling module counterwe
+# 
+# Top level modules:
+# 	counterwe
+# End time: 02:51:06 on Sep 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

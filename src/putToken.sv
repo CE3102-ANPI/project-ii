@@ -9,31 +9,40 @@
   
 module putToken
   (
-	input logic clk, reset,
+	input logic clk, reset,start,
 	input logic [1:0] tokID,//numero de ficha por generar
 	
 	output logic [4:0] address,
-	output logic [9:0] bus_data_o
+	output logic [9:0] bus_data_o,
+	output logic busy
   );
   
-	typedef enum logic [1:0] {S0, S1, S2} statetype;
+	typedef enum logic [1:0] {S0, S1, S2,S3} statetype;
 	statetype state, nextstate;
 	// state register
 	always_ff @(posedge clk, posedge reset)
-		if (reset) state <= S0;
+		if (reset) state <= S3;
 		else       state <= nextstate;
 	// next state logic
 	always_comb begin//maquina de estados, en cada estado se pinta una linea de la ficha en la matriz
 		case (state)
+			S3:	if (start) 
+						nextstate=S0;
+					else
+						nextstate=S3;
+			
 			S0:	nextstate = S1;
 			
 			S1:	nextstate = S2;
 					
-			S2:	nextstate = S0;
+			S2:	nextstate = S3;
 		endcase
 	end
 	
 	//output logic
+	
+	assign busy=(state!=S3);
+	
 	always_latch begin
 		case (state) 
 			S0:begin
@@ -41,6 +50,7 @@ module putToken
 				if (tokID ==2'b00) 
 					begin
 						bus_data_o=10'b0000000000;
+						
 					end
 				else if (tokID ==2'b01) 
 					begin

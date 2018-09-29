@@ -17,11 +17,13 @@ module genToken
   logic [1:0] tok_list [15:0];
   logic [3:0]cnt_tok_out;//numero retornado por el contador que decide la ficha que se pinta
   logic [1:0]tok_id;//identificador del token a pintar
-  logic count_enable;
+  logic busy,count_enable;
 	
   counterwe #(4) tokListCount(clk,rst,count_enable,cnt_tok_out);
-  putToken putToken1(clk,rst,tok_id,addr_ram_board,bus_data_o_ram_board);
+  putToken putToken1(clk,rst,start,tok_id,addr_ram_board,bus_data_o_ram_board,busy);
 	
+	assign count_enable=~busy;
+	assign start=1;
 	assign tok_list ='{0,1,2,3,
 					1,0,3,2,
 					2,3,1,0,

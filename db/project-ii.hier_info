@@ -1,0 +1,73 @@
+|genToken_tb
+
+
+|genToken_tb|genToken:dut
+clk => clk.IN2
+rst => rst.IN2
+addr_ram_board[0] <= putToken:putToken1.port4
+addr_ram_board[1] <= putToken:putToken1.port4
+addr_ram_board[2] <= putToken:putToken1.port4
+addr_ram_board[3] <= putToken:putToken1.port4
+addr_ram_board[4] <= putToken:putToken1.port4
+bus_data_o_ram_board[0] <= putToken:putToken1.port5
+bus_data_o_ram_board[1] <= putToken:putToken1.port5
+bus_data_o_ram_board[2] <= putToken:putToken1.port5
+bus_data_o_ram_board[3] <= putToken:putToken1.port5
+bus_data_o_ram_board[4] <= putToken:putToken1.port5
+bus_data_o_ram_board[5] <= putToken:putToken1.port5
+bus_data_o_ram_board[6] <= putToken:putToken1.port5
+bus_data_o_ram_board[7] <= putToken:putToken1.port5
+bus_data_o_ram_board[8] <= putToken:putToken1.port5
+bus_data_o_ram_board[9] <= putToken:putToken1.port5
+
+
+|genToken_tb|genToken:dut|counterwe:tokListCount
+clk_i => q_o[0]~reg0.CLK
+clk_i => q_o[1]~reg0.CLK
+clk_i => q_o[2]~reg0.CLK
+clk_i => q_o[3]~reg0.CLK
+rst_i => q_o[0]~reg0.ACLR
+rst_i => q_o[1]~reg0.ACLR
+rst_i => q_o[2]~reg0.ACLR
+rst_i => q_o[3]~reg0.ACLR
+e => q_o[0]~reg0.ENA
+e => q_o[3]~reg0.ENA
+e => q_o[2]~reg0.ENA
+e => q_o[1]~reg0.ENA
+q_o[0] <= q_o[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_o[1] <= q_o[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_o[2] <= q_o[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_o[3] <= q_o[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|genToken_tb|genToken:dut|putToken:putToken1
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+start => nextstate.S0.DATAB
+start => Selector0.IN2
+tokID[0] => Equal0.IN1
+tokID[0] => Equal1.IN0
+tokID[0] => Equal2.IN1
+tokID[0] => Equal3.IN1
+tokID[1] => Equal0.IN0
+tokID[1] => Equal1.IN1
+tokID[1] => Equal2.IN0
+tokID[1] => Equal3.IN0
+address[0] <= address[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+address[1] <= address[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+address[2] <= <GND>
+address[3] <= <GND>
+address[4] <= <GND>
+bus_data_o[0] <= <GND>
+bus_data_o[1] <= <GND>
+bus_data_o[2] <= <GND>
+bus_data_o[3] <= <GND>
+bus_data_o[4] <= bus_data_o[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bus_data_o[5] <= bus_data_o[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bus_data_o[6] <= bus_data_o[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bus_data_o[7] <= <GND>
+bus_data_o[8] <= <GND>
+bus_data_o[9] <= <GND>
+busy <= busy.DB_MAX_OUTPUT_PORT_TYPE
+
+

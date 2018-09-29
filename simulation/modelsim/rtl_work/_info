@@ -1,0 +1,113 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/simulation/modelsim
+vcounterwe
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1538211066
+!i10b 1
+!s100 _mOJIinoz2j2bOY`;c]gj2
+Ik7Q23_M1YHHO:EbhWHC383
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 counterwe_sv_unit
+S1
+R0
+w1538197332
+8C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/counterwe.sv
+FC:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/counterwe.sv
+Z4 L0 10
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1538211066.000000
+!s107 C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/counterwe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src|C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/counterwe.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src
+Z9 tCvgOpt 0
+vgenToken
+R1
+R2
+!i10b 1
+!s100 hDALPXDC3d0dz:JzmjD5H1
+ID`_13HMbXZI_nCLF2Eh260
+R3
+!s105 genToken_sv_unit
+S1
+R0
+w1538209334
+8C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken.sv
+FC:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken.sv
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src|C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken.sv|
+!i113 1
+R7
+R8
+R9
+ngen@token
+vgenToken_tb
+R1
+R2
+!i10b 1
+!s100 k_ehkTaF_WoSLA7[EkSNW2
+I=3RUDMA:a?LS[^zVYBRAH1
+R3
+!s105 genToken_tb_sv_unit
+S1
+R0
+w1538206664
+8C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken_tb.sv
+FC:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken_tb.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src|C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/genToken_tb.sv|
+!i113 1
+R7
+R8
+R9
+ngen@token_tb
+vputToken
+R1
+R2
+!i10b 1
+!s100 ;1Y0CRiGz@d@5913H2b[:2
+IbRzmBRB[Q974oYl1Gb6:92
+R3
+!s105 putToken_sv_unit
+S1
+R0
+w1538209332
+8C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/putToken.sv
+FC:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/putToken.sv
+R4
+R5
+r1
+!s85 0
+31
+!s108 1538211065.000000
+!s107 C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/putToken.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src|C:/Users/vic95/Documents/U/TallerDigitales/Proyecto2/project-ii/src/putToken.sv|
+!i113 1
+R7
+R8
+R9
+nput@token

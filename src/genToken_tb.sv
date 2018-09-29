@@ -11,11 +11,11 @@ module genToken_tb();
 	initial begin 
 		clk_i=1;
 		rst=1;
-		#10
+		#10000
 		rst=0;
 	end
 	
-	always #20 clk_i = ~clk_i;
+	always #20000 clk_i = ~clk_i;
 	
 		
 endmodule
