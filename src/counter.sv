@@ -1,19 +1,18 @@
 /* 
  *
- * Synchronous counter.
+ * Synchronous Reset Counter.
  *
  * @file  counter.sv
  * @autor Luis Arturo Mora Granados
- * @date  20/09/2018
+ * @date  21/09/2018
  */
 
-module counter #(parameter N = 8)
+module counter #(parameter BITS = 4)
 (
-    input logic clk_i, rst_i,
-    output logic [N-1:0] q_o
+	input logic clk_i, rst_i, ena_i,
+	output logic [BITS-1:0] bus_q_o
 );
-    always_ff @(posedge clk_i, posedge rst_i)
-        if(rst_i) q_o <= 0;
-        else      q_o <= q_o + 1;
-
+	always_ff @(posedge clk_i)
+		if     (rst_i) bus_q_o <= 0;
+		else if(ena_i) bus_q_o <= bus_q_o + 1'b1;
 endmodule

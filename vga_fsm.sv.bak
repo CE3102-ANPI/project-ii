@@ -1,0 +1,21 @@
+/* 
+ *
+ * Mealy H Sync Machine.
+ *
+ * @file  h_fsm.sv
+ * @autor Luis Arturo Mora Granados
+ * @date  20/09/2018
+ */
+
+module vga_fsm #
+(
+	parameter VACTIVE = 10'd480,
+	parameter VFP     = 10'd10,
+	parameter VSYN    = 10'd2,
+	parameter VBP     = 10'd33
+)
+(
+	input logic clk_i, rst_i, str_i,
+	input logic [9:0] h_cnt_i,
+	output logic busy_o, hs_o, h_rst_o, h_ena_o, h_dsp_o
+);

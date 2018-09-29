@@ -1,0 +1,15 @@
+module h_fsm_tb();
+   
+	logic clk_i, rst_i;
+	logic [9:0] h_cnt_i;
+	logic busy_o, hs_o, h_rst_o, h_ena_o, h_dsp_o;
+	
+	initial begin
+	    clk_i = 0;
+		 rst_i = 1;
+		 #400 rst_i = 0;
+	end
+	
+	always #200 clk_i = ~clk_i;
+	
+endmodule

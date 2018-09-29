@@ -1,0 +1,63 @@
+# Reading C:/intelFPGA_pro/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do project-ii_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5c Lib Mapping Utility 2017.01 Jan 23 2017
+# vmap work rtl_work 
+# Copying C:/intelFPGA_pro/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/artmo/Documents/Workspace/project-ii/src {C:/Users/artmo/Documents/Workspace/project-ii/src/pll.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+# Start time: 10:03:07 on Sep 29,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/artmo/Documents/Workspace/project-ii/src" C:/Users/artmo/Documents/Workspace/project-ii/src/pll.sv 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 10:03:07 on Sep 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/artmo/Documents/Workspace/project-ii/src {C:/Users/artmo/Documents/Workspace/project-ii/src/fsm_vga.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+# Start time: 10:03:08 on Sep 29,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/artmo/Documents/Workspace/project-ii/src" C:/Users/artmo/Documents/Workspace/project-ii/src/fsm_vga.sv 
+# -- Compiling module fsm_vga
+# 
+# Top level modules:
+# 	fsm_vga
+# End time: 10:03:08 on Sep 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/artmo/Documents/Workspace/project-ii/src {C:/Users/artmo/Documents/Workspace/project-ii/src/counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+# Start time: 10:03:08 on Sep 29,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/artmo/Documents/Workspace/project-ii/src" C:/Users/artmo/Documents/Workspace/project-ii/src/counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 10:03:08 on Sep 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/artmo/Documents/Workspace/project-ii/src {C:/Users/artmo/Documents/Workspace/project-ii/src/vga_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+# Start time: 10:03:08 on Sep 29,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/artmo/Documents/Workspace/project-ii/src" C:/Users/artmo/Documents/Workspace/project-ii/src/vga_controller.sv 
+# -- Compiling module vga_controller
+# 
+# Top level modules:
+# 	vga_controller
+# End time: 10:03:08 on Sep 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/artmo/Documents/Workspace/project-ii/testbench {C:/Users/artmo/Documents/Workspace/project-ii/testbench/vga_controller_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+# Start time: 10:03:08 on Sep 29,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/artmo/Documents/Workspace/project-ii/testbench" C:/Users/artmo/Documents/Workspace/project-ii/testbench/vga_controller_tb.sv 
+# -- Compiling module vga_controller_tb
+# 
+# Top level modules:
+# 	vga_controller_tb
+# End time: 10:03:08 on Sep 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'pll:pxl_gen|counter:inner|bus_q_o[0]'
+Slack : -2.520
+TNS   : -57.890
+
+Type  : Slow 1200mV 85C Model Setup 'clk_i'
+Slack : -0.846
+TNS   : -0.846
+
+Type  : Slow 1200mV 85C Model Hold 'pll:pxl_gen|counter:inner|bus_q_o[0]'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_i'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_i'
+Slack : -3.000
+TNS   : -4.500
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll:pxl_gen|counter:inner|bus_q_o[0]'
+Slack : -1.500
+TNS   : -43.500
+
+Type  : Slow 1200mV 0C Model Setup 'pll:pxl_gen|counter:inner|bus_q_o[0]'
+Slack : -2.242
+TNS   : -51.441
+
+Type  : Slow 1200mV 0C Model Setup 'clk_i'
+Slack : -0.658
+TNS   : -0.658
+
+Type  : Slow 1200mV 0C Model Hold 'pll:pxl_gen|counter:inner|bus_q_o[0]'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_i'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_i'
+Slack : -3.000
+TNS   : -4.500
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll:pxl_gen|counter:inner|bus_q_o[0]'
+Slack : -1.500
+TNS   : -43.500
+
+Type  : Fast 1200mV 0C Model Setup 'pll:pxl_gen|counter:inner|bus_q_o[0]'
+Slack : -0.720
+TNS   : -13.664
+
+Type  : Fast 1200mV 0C Model Setup 'clk_i'
+Slack : -0.260
+TNS   : -0.260
+
+Type  : Fast 1200mV 0C Model Hold 'pll:pxl_gen|counter:inner|bus_q_o[0]'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_i'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_i'
+Slack : -3.000
+TNS   : -4.176
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll:pxl_gen|counter:inner|bus_q_o[0]'
+Slack : -1.000
+TNS   : -29.000
+
+------------------------------------------------------------

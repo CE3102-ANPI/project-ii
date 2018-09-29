@@ -1,0 +1,5 @@
+module counter_tb();
+
+	always #200 clk_i = ~clk_i;
+	
+endmodule

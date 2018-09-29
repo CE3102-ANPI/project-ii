@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/artmo/Documents/Workspace/project-ii/src {C:/Users/artmo/Documents/Workspace/project-ii/src/register.sv}
+vlog -sv -work work +incdir+C:/Users/artmo/Documents/Workspace/project-ii/src {C:/Users/artmo/Documents/Workspace/project-ii/src/counter.sv}
+vlog -sv -work work +incdir+C:/Users/artmo/Documents/Workspace/project-ii/testbench {C:/Users/artmo/Documents/Workspace/project-ii/testbench/counter_tb.sv}
+

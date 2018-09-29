@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE EP4CGX150DF31C7
-set_global_assignment -name TOP_LEVEL_ENTITY fsm_vga
+set_global_assignment -name TOP_LEVEL_ENTITY vga_controller_tb
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:56:01  SEPTEMBER 20, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
@@ -47,11 +47,51 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name SYSTEMVERILOG_FILE code/ram.sv
-set_global_assignment -name SYSTEMVERILOG_FILE code/fsm_vga.sv
-set_global_assignment -name SYSTEMVERILOG_FILE code/comparator.sv
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
+set_global_assignment -name SYSTEMVERILOG_FILE testbench/counter_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/pll.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/register.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/ram.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/fsm_vga.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/comparator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/vga_controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE testbench/pll_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE testbench/vga_controller_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE testbench/fsm_vga_tb.sv
+set_location_assignment PIN_D27 -to clk_i
+set_location_assignment PIN_A24 -to vs_o
+set_location_assignment PIN_B24 -to hs_o
+set_location_assignment PIN_F25 -to blank_o
+set_location_assignment PIN_AH20 -to sync_o
+set_location_assignment PIN_A17 -to r_o[0]
+set_location_assignment PIN_C18 -to r_o[1]
+set_location_assignment PIN_B18 -to r_o[2]
+set_location_assignment PIN_A18 -to r_o[3]
+set_location_assignment PIN_E18 -to r_o[4]
+set_location_assignment PIN_E19 -to r_o[5]
+set_location_assignment PIN_B19 -to r_o[6]
+set_location_assignment PIN_C19 -to r_o[7]
+set_location_assignment PIN_E24 -to b_o[0]
+set_location_assignment PIN_B25 -to b_o[2]
+set_location_assignment PIN_C24 -to b_o[1]
+set_location_assignment PIN_C23 -to b_o[3]
+set_location_assignment PIN_F24 -to b_o[4]
+set_location_assignment PIN_A23 -to b_o[5]
+set_location_assignment PIN_G25 -to b_o[6]
+set_location_assignment PIN_C22 -to b_o[7]
+set_location_assignment PIN_D20 -to g_o[0]
+set_location_assignment PIN_C20 -to g_o[1]
+set_location_assignment PIN_A20 -to g_o[2]
+set_location_assignment PIN_K19 -to g_o[3]
+set_location_assignment PIN_A21 -to g_o[4]
+set_location_assignment PIN_F21 -to g_o[5]
+set_location_assignment PIN_A22 -to g_o[6]
+set_location_assignment PIN_B22 -to g_o[7]
+set_location_assignment PIN_V28 -to rst_i
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

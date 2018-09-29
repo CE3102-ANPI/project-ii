@@ -9,9 +9,9 @@
  * @date  20/09/2018
 */
 
-module comparator #(parameter N = 8) 
+module comparator #(parameter BITS = 8) 
 (
-   input  logic [N-1:0] a, b,
+   input  logic [BITS-1:0] a, b,
    output logic eq, neq, lt, lte, gt, gte
 );
 
