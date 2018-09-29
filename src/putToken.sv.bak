@@ -1,0 +1,17 @@
+ /* 
+  *
+  * Token generation fsm.
+  *
+  * @file  genToken.sv
+  * @autor Victor Montero
+  * @date  21/09/2018
+  */
+  
+module putToken
+  (
+	input logic [3:0] tokID,//numero de ficha por generar
+	input logic [:0] bus_data_i,
+	output logic [DATA_WIDTH-1:0] bus_data_o
+  );
+  
+endmodule

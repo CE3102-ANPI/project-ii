@@ -1,0 +1,15 @@
+ /* 
+  *
+  * Token generation.
+  *
+  * @file  genToken.sv
+  * @autor Victor Montero
+  * @date  21/09/2018
+  */
+  
+ /* module genToken
+  (
+	input logic [1:0] w_addr_i, r_addr_i,
+	input logic [DATA_WIDTH-1:0] bus_data_i,
+	output logic [DATA_WIDTH-1:0] bus_data_o
+  );*/

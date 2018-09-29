@@ -1,0 +1,7 @@
+
+
+module genToken_tb();
+	logic clk;
+	
+	logic [4:0] add_ram_board,
+	logic [9:0] bus_data_o_ram_board

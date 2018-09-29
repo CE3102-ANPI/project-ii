@@ -1,0 +1,32 @@
+
+module fsm(clk, rst, x, y);
+input clk, rst, x;
+output logic [1:0] y;
+enum { STATEA=2'b00, STATEB=2'b01, STATEC=2'b10,
+STATED=2'b11 } state, next_state;
+// next state logic
+always_comb begin
+case(state)
+STATEA: next_state = x ? STATEB : STATEA;
+STATEB: next_state = x ? STATEC : STATED;
+STATEC: next_state = x ? STATED : STATEA;
+STATED: next_state = x ? STATEC : STATEB;
+endcase
+end
+
+always_ff @(posedge clk) begin
+if (rst)
+state <= STATEA;
+else
+state <= next_state;
+end
+// Output logic
+always_comb begin
+case(state)
+STATEA: y = 2'b00;
+STATEB: y = 2'b00;
+STATEC: y = 2'b11;
+STATED: y = 2'b10;
+endcase
+end
+endmodule
